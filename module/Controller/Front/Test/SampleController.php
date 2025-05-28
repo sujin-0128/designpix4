@@ -9,7 +9,6 @@ class SampleController extends \Controller\Front\Controller
 //		gd_debug($this);
 		$setData = 'Hello World !!!';
 		$this->setData('setData', $setData);
-		echo 1;
 	}
 }
 
