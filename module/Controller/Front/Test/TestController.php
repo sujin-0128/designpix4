@@ -8,6 +8,6 @@ class TestController extends \Controller\Front\Controller
     public function index()
     {
         echo '/module';
-        echo 3;
+        echo 4;
     }
 }
