@@ -1,0 +1,10 @@
+skin_name : 스킨업로드
+skin_code : mck_test
+skin_version : 2.0
+skin_upload_date : 2024-03-27
+skin_device : front
+skin_country : kr_global
+apply_solution : 고도몰5
+worker : 츄리닝닷컴 - 전체관리자
+notice1 : 압축화일(zip)로 업로드한 스킨임
+notice2 : 230725패치(moment_C_C) - 

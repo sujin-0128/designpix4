@@ -1,0 +1,10 @@
+skin_name : 듀먼테스트
+skin_code : dm2406
+skin_version : 2.0
+skin_upload_date : 2024-06-19
+skin_device : mobile
+skin_country : kr_global
+apply_solution : 고도몰5
+worker : 츄리닝닷컴 - 전체관리자
+notice1 : 압축화일(zip)로 업로드한 스킨임
+notice2 : 주문서 개발및퍼블(mu_2403) - 

@@ -1,0 +1,56 @@
+{ # header }
+
+<form id="frmSearchBase" method="get">
+<div class="layer-depositor unknown-layer">
+    <div class="box">
+        <div class="view">
+            <h2>미확인 입금자 리스트</h2>
+            <div>               
+                <div class="board">
+                    <table cellspacing="0" border="1">
+                        <colgroup>
+                            <col />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">입금일자</th>
+                            <th scope="col">고객명</th>
+                            <th scope="col">은행</th>
+                            <th scope="col">입금액</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--{ ? loop }-->
+                            <!--{ @ loop }-->
+                            <tr>
+                                <td>{.no}</td>
+                                <td>{.depositDate}</td>
+                                <td>{.ghostDepositor}</td>
+                                <td>{.bankName}</td>
+                                <td>{.depositPrice}원</td>
+                            </tr>
+                            <!--{ / }-->
+                        <!--{ / }-->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="board-paging">
+                    <!--{? bankdaUse}-->
+                    <nav>
+                        <ul class="pagination pagination-sm">
+                            {paging}
+                        </ul>
+                    </nav>
+                    <!--{:}-->
+                    {page->getPage()}
+                    <!--{/}-->
+                </div>
+            </div>
+            <button type="button" class="close" title="닫기" onclick="window.close();">닫기</button>
+        </div>
+    </div>
+</div>
+</form>
+
+{ # footer }

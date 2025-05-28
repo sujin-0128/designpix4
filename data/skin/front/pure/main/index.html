@@ -1,0 +1,96 @@
+{*** 쇼핑몰 메인본문 | main/index.php ***}
+{ # header }
+
+<div class="main_visual">
+    <div class="dpx_main_visual">{=includeWidget('proc/_slider_banner.html', 'bannerCode', '2340748152')}</div>
+
+</div>
+<!-- //main_visual -->
+<div class="main_content">
+    <div class="main_slide_ban">
+        <div class="main_slide">
+            <!--{ @dataBanner('378864211') }-->{.tag}<!--{ / }-->
+        </div>
+        <!-- //main_slide -->
+
+        <div class="main_banner">
+            <!--{ @dataBanner('735864301') }-->{.tag}<!--{ / }-->
+        </div>
+        <!-- //main_banner -->
+    </div>
+    <!-- //main_slide_ban -->
+
+    <div class="main_goods_cont">
+        <!-- 메인 상품 노출 -->{=includeWidget('goods/_goods_display_main.html','sno','1')}<!-- 메인 상품 노출 -->
+    </div>
+    <!-- //main_goods_cont -->
+
+    <div class="main_cont_slide_ban">
+        <div class="main_cont_slide">
+            {=includeWidget('proc/_slider_banner.html', 'bannerCode', '3040312042')}
+        </div>
+        <!-- //main_cont_slide -->
+    </div>
+    <!-- //main_cont_slide_ban -->
+
+    <div class="main_goods_cont">
+        <!-- 메인 상품 노출 -->{=includeWidget('goods/_goods_display_main.html', 'sno', '3')}<!-- 메인 상품 노출 -->
+        <div class="main_ban_img06">
+            <!--{ @dataBanner('2028551540') }-->{.tag}<!--{ / }-->
+        </div>
+        <!-- 메인 상품 노출 -->{=includeWidget('goods/_goods_display_main.html', 'sno', '2')}<!-- 메인 상품 노출 -->
+    </div>
+    <!-- //main_goods_cont -->
+    <script>
+		$(function(){
+
+			//이미지 정보 복사하여 버튼에 입력
+			$('.dpx_main_visual .slick-slide:not(.slick-cloned)').each(function(i, el){
+				let slideAttrAlt = $(el).find('img').attr('alt');
+				$('.slick-dots > li > button').eq(i).text(slideAttrAlt)
+				//console.log(i)
+			})
+			//이미지 슬라이드 갯수 구하여 버튼 width값 생성
+			let btnLength = $('.dpx_main_visual .slick-dots > li').length;
+			$('.dpx_main_visual .slick-dots > li').css('width','calc( 100% / '+btnLength+' )');
+
+			//강조텍스트
+			$('.dpx_main_visual .slick-dots button').each(function(i, el){
+				let btnStrongWhich = $('.slider-wrap .slick-slide:not(.slick-cloned)').eq(i).find('img').attr('alt');
+				let btnStrongColor = btnStrongWhich.indexOf('#');
+				let btnStrongText = btnStrongWhich.indexOf('@'); 
+				let btnStrongSlash = btnStrongWhich.indexOf('/'); 
+				let btnSliceColor = btnStrongWhich.substr(btnStrongColor,7); 
+				let btnsliceText = btnStrongWhich.substr(0,btnStrongText); 
+				let btnsliceSlash = btnStrongWhich.substr(btnStrongSlash,); 
+				
+				let btnRealText = btnStrongWhich.slice(0,btnStrongColor);
+				let btnTxt =  btnStrongWhich.substr(btnStrongText,btnStrongColor-btnStrongText).replace('@','')
+				let btnSlash =  btnsliceSlash.replace('/','')
+
+				//console.log(btnStrongSlash)
+				if (btnStrongText !== -1)	{
+					$(el).empty();
+					if(btnStrongSlash !== -1){
+					$(el).append(btnsliceText+'<span class="dpx_btn_css" style="color:'+btnSliceColor+'">'+btnTxt+'</span>'+' '+btnSlash)
+					}else{
+					$(el).append(btnsliceText+'<span class="dpx_btn_css" style="color:'+btnSliceColor+'">'+btnTxt+'</span>')
+					}
+
+				}
+				//console.log(btnTxt);
+			})
+		})
+    </script>
+	<style>
+		.dpx_main_visual .slick-dots {display:flex; flex-flow:row nowrap;bottom:0;}
+		.dpx_main_visual .slick-dots li {margin:0;}
+		.dpx_main_visual .slick-dots li button {width:100% !important; height:39px !important; font-size:15px !important; border-radius:0 !important; opacity:1;}
+		.dpx_btn_css {margin-left:5px;}
+	</style>
+</div>
+<!-- //main_content -->
+
+
+
+{ # footer }

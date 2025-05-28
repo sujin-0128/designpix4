@@ -1,0 +1,2 @@
+<?php /* Template_ 2.2.7 2017/10/16 15:35:17 /www/designpix4_godomall_com/data/mail/subject_SLEEPNOTICE.php 000000282 */ ?>
+[<?php echo $TPL_VAR["rc_mallNm"]?>] <?php echo $TPL_VAR["rc_expirationFl"]?>년 이상 미접속으로 인한 휴면회원 전환 사전 안내드립니다.

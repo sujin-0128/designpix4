@@ -1,0 +1,9 @@
+skin_name : moment20210421
+skin_code : moment20210421
+skin_version : 2.0
+skin_upload_date : 2021-04-21
+skin_device : front
+skin_country : kr_global
+apply_solution : 고도몰5
+worker : 츄리닝닷컴 - 전체관리자
+notice1 : 압축화일(zip)로 업로드한 스킨임

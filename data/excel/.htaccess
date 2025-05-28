@@ -1,0 +1,6 @@
+<Files *>
+order deny,allow
+deny from all
+</Files>
+
+ErrorDocument 403 /member/login.php

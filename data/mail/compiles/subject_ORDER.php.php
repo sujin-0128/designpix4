@@ -1,0 +1,2 @@
+<?php /* Template_ 2.2.7 2018/01/03 16:27:54 /www/designpix4_godomall_com/data/mail/subject_ORDER.php 000000233 */ ?>
+[<?php echo $TPL_VAR["rc_mallNm"]?>] <?php echo $TPL_VAR["rc_orderNm"]?>님의 주문내역을 알려드립니다.

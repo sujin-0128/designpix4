@@ -1,0 +1,9 @@
+skin_name : moment_us_CC
+skin_code : moment_us_CC
+skin_copy_date : 2022-03-14
+skin_version : 2.0
+skin_device : front
+skin_country : us_global
+apply_solution : 고도몰5
+worker : 츄리닝닷컴 - 전체관리자
+notice1 : moment_us 스킨에서 moment_us_CC 스킨으로 복사한 스킨임

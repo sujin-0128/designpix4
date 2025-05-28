@@ -1,0 +1,9 @@
+skin_name : 반응형_mplshop
+skin_code : mplshop
+skin_version : 1.3
+skin_upload_date : 2018-09-11
+skin_device : front
+skin_country : kr_global
+apply_solution : 고도몰5
+worker : 쇼핑몰명 - 전체관리자
+notice1 : 압축화일(zip)로 업로드한 스킨임

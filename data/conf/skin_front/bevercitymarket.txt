@@ -1,0 +1,9 @@
+skin_name : 베버시티마켓_작업
+skin_code : bevercitymarket
+skin_copy_date : 2022-10-27
+skin_version : 2.0
+skin_device : front
+skin_country : kr_global
+apply_solution : 고도몰5
+worker : 츄리닝닷컴 - 전체관리자
+notice1 : moment 스킨에서 bevercitymarket 스킨으로 복사한 스킨임
