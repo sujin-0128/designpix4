@@ -1,0 +1,35 @@
+{*** 결합할인 메인상품 장바구니시 결합할인 안내 | goods/layer_bundle_main_cart.php ***}
+<div class="layer_wrap_cont">
+    <div class="ly_tit">
+        <h4>
+            {=__('함께 사면 할인되는 상품')}
+        </h4>
+    </div>
+    <div class="ly_cont">
+        <div class="scroll_box">
+            <!--{ @dataBanner('1902025997') }-->{.tag}<!--{ / }-->
+        </div>
+        <!-- //scroll_box -->
+        <div class="btn_center_box">
+            <button class="btn_ly_download"><strong>{=__('상품 더보기')}</strong></button>
+            <button id="btnCart" class="btn_ly_download"><strong>{=__('장바구니 바로가기')}</strong></button>
+        </div>
+    </div>
+    <!-- //ly_cont -->
+    <a href="#close" class="ly_close layer_close"><img src="../img/common/layer/btn_layer_close.png" alt="{=__('닫기')}"></a>
+</div>
+<!-- //layer_wrap_cont -->
+
+
+<script type="text/javascript">
+    <!--
+    $(document).ready(function () {
+        $('#btnCart').click(function (e) {
+            gd_close_layer();
+            gd_goods_order();
+           
+        });
+       
+    });
+    //-->
+</script>
